@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecture</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#111] text-gray-200 font-sans">
+    <!-- Scroll To Top Button -->
+    <button
+      id="scrollBtn"
+      class="hidden fixed bottom-6 right-6 bg-[#D4AF37]/80 backdrop-blur-md text-white p-4 rounded-full shadow-xl hover:bg-[#B8860B] transition transform hover:scale-110 z-50"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- HEADER -->
+    <header
+      class="bg-[#111] border-b border-[#D4AF37]/40 text-white p-4 flex flex-wrap justify-between items-center fixed top-0 w-full z-40"
+    >
+      <!-- LOGO -->
+      <h1 class="text-xl font-bold tracking-wide">
+        <span class="text-[#D4AF37]">ELION'</span>SC
+      </h1>
+
+      <!-- DESKTOP MENU -->
+      <nav class="hidden md:flex">
+        <ul class="flex space-x-6 text-sm md:text-base">
+          <li>
+            <a href="#home" class="hover:text-[#D4AF37] transition">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-[#D4AF37] transition">About</a>
+          </li>
+          <li>
+            <a href="#Services" class="hover:text-[#D4AF37] transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#Gallery" class="hover:text-[#D4AF37] transition"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-[#D4AF37] transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HAMBURGER BUTTON -->
+      <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- MOBILE MENU -->
+      <nav
+        id="mobile-menu"
+        class="hidden absolute top-full left-0 w-full bg-[#111] border-t border-[#D4AF37]/40 text-white shadow-lg md:hidden"
+      >
+        <ul class="flex flex-col space-y-4 p-4">
+          <li><a href="#home" class="hover:text-[#D4AF37]">Home</a></li>
+          <li><a href="#about" class="hover:text-[#D4AF37]">About</a></li>
+          <li><a href="#Services" class="hover:text-[#D4AF37]">Services</a></li>
+          <li><a href="#Gallery" class="hover:text-[#D4AF37]">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-[#D4AF37]">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center bg-gradient-to-r from-[#111] via-[#222] to-[#111] pt-24"
+    >
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10"
+      >
+        <!-- TEXT -->
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            ELION <span class="text-[#D4AF37]">DESIGN</span>
+          </h1>
+          <p class="text-gray-400 mb-8">
+            Step into a world where timeless elegance meets modern architecture,
+            wrapped in the luxury of golden details.
+          </p>
+          <a
+            href="#contact"
+            class="bg-[#D4AF37] text-white px-6 py-3 rounded-lg shadow-lg font-semibold hover:bg-[#B8860B] transition"
+          >
+            Start Project
+          </a>
+          <!-- STATS -->
+          <div class="grid grid-cols-3 gap-6 mt-12">
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold text-[#D4AF37]">
+                400+
+              </h3>
+              <p class="text-gray-400 text-sm">Projects</p>
+            </div>
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold text-[#D4AF37]">
+                700+
+              </h3>
+              <p class="text-gray-400 text-sm">Clients</p>
+            </div>
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold text-[#D4AF37]">
+                100+
+              </h3>
+              <p class="text-gray-400 text-sm">Designs</p>
+            </div>
+          </div>
+        </div>
+        <!-- IMAGE -->
+        <div>
+          <img
+            src="img/IMG-20250910-WA0139.jpg"
+            alt="Design"
+            class="rounded-xl shadow-xl w-full h-auto border border-[#D4AF37]/40"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <img
+          src="img/WhatsApp Image 2025-09-10 at 14.30.32_303fdceb.jpg"
+          alt="About"
+          class="rounded-xl shadow-lg w-full h-auto border border-[#D4AF37]/30"
+        />
+        <div>
+          <h2 class="text-3xl font-bold mb-4 text-[#D4AF37]">About Us</h2>
+          <p class="text-gray-400 mb-4">
+            We are a team of passionate architects and designers dedicated to
+            creating unique, sustainable, and modern living spaces.
+          </p>
+          <p class="text-gray-400">
+            With years of experience, we combine creativity and technology to
+            deliver projects that inspire.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="Services" class="py-20 bg-[#111]">
+      <div class="container mx-auto text-center px-6">
+        <h2 class="text-3xl font-bold mb-12 text-[#D4AF37]">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-[#222] p-6 rounded-lg shadow-lg border border-[#D4AF37]/30 hover:scale-105 transition"
+          >
+            <div class="text-4xl text-[#D4AF37] mb-4">🏠</div>
+            <h3 class="text-xl font-semibold mb-2 text-white">
+              Residential Design
+            </h3>
+            <p class="text-gray-400">
+              Elegant and functional home designs tailored to your needs.
+            </p>
+          </div>
+          <div
+            class="bg-[#222] p-6 rounded-lg shadow-lg border border-[#D4AF37]/30 hover:scale-105 transition"
+          >
+            <div class="text-4xl text-[#D4AF37] mb-4">🏢</div>
+            <h3 class="text-xl font-semibold mb-2 text-white">
+              Commercial Design
+            </h3>
+            <p class="text-gray-400">
+              Innovative and stylish design for offices and business spaces.
+            </p>
+          </div>
+          <div
+            class="bg-[#222] p-6 rounded-lg shadow-lg border border-[#D4AF37]/30 hover:scale-105 transition"
+          >
+            <div class="text-4xl text-[#D4AF37] mb-4">🌳</div>
+            <h3 class="text-xl font-semibold mb-2 text-white">
+              Landscape Design
+            </h3>
+            <p class="text-gray-400">
+              Beautiful outdoor spaces that connect you with nature.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="Gallery" class="py-20 bg-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-[#D4AF37]">
+          Gallery
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
+          <img
+            src="img/IMG-20250910-WA0030.jpg"
+            class="w-full h-48 object-cover rounded-lg shadow-lg border border-[#D4AF37]/30"
+          />
+          <img
+            src="img/IMG-20250910-WA0079.jpg"
+            class="w-full h-48 object-cover rounded-lg border border-[#D4AF37]/30"
+          />
+          <img
+            src="img/WhatsApp Image 2025-09-10 at 14.30.33_446fbeb7.jpg"
+            class="w-full h-48 object-cover rounded-lg border border-[#D4AF37]/30"
+          />
+          <img
+            src="img/IMG-20250910-WA0020.jpg"
+            class="w-full h-48 object-cover rounded-lg border border-[#D4AF37]/30"
+          />
+          <img
+            src="img/IMG-20250910-WA0044.jpg"
+            class="w-full h-48 object-cover rounded-lg border border-[#D4AF37]/30"
+          />
+          <img
+            src="img/IMG-20250910-WA0045.jpg"
+            class="w-full h-48 object-cover rounded-lg border border-[#D4AF37]/30"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-[#111]">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-[#D4AF37]">
+          Contact Us
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+          <!-- FORM -->
+          <div
+            class="bg-[#222] p-6 rounded-lg shadow-lg border border-[#D4AF37]/30"
+          >
+            <h3 class="text-xl font-semibold mb-6 text-white">
+              Send a Message
+            </h3>
+            <form class="space-y-4">
+              <div>
+                <label for="name" class="block text-gray-400 font-medium"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                  class="w-full border border-[#D4AF37]/30 bg-[#111] text-white rounded-lg p-3 focus:outline-none focus:ring focus:ring-[#D4AF37]/50"
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-gray-400 font-medium"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Write your message"
+                  required
+                  class="w-full border border-[#D4AF37]/30 bg-[#111] text-white rounded-lg p-3 focus:outline-none focus:ring focus:ring-[#D4AF37]/50"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-[#D4AF37] text-white py-3 rounded-lg font-semibold hover:bg-[#B8860B] transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <!-- MAP -->
+          <div
+            class="rounded-lg overflow-hidden shadow-lg min-h-[300px] border border-[#D4AF37]/30"
+          >
+            <iframe
+              src="https://maps.google.com/maps?q=Jl. Cut Nyak Dien No.91, Sumedang, Indonesia&t=&zoom=15&maptype=roadmap&ie=UTF8&iwloc=&output=embed"
+              class="w-full h-full min-h-[300px]"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <!-- SOCIAL -->
+        <div class="flex justify-center space-x-6 text-2xl mt-12">
+          <a
+            href="https://www.facebook.com/Elion Draftteam"
+            target="_blank"
+            class="text-[#D4AF37] hover:text-[#B8860B]"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/eliondraft"
+            target="_blank"
+            class="text-[#D4AF37] hover:text-[#B8860B]"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://wa.me/6285959784342"
+            target="_blank"
+            class="text-[#D4AF37] hover:text-[#B8860B]"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script>
+      // Scroll to top button
+      const scrollTopBtn = document.getElementById("scrollBtn");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollTopBtn.classList.remove("hidden");
+        } else {
+          scrollTopBtn.classList.add("hidden");
+        }
+      });
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("fa-bars");
+        menuIcon.classList.toggle("fa-xmark");
+      });
+
+      // Menutup menu
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden"); // tutup menu
+          menuIcon.classList.add("fa-bars"); // kembalikan icon hamburger
+          menuIcon.classList.remove("fa-xmark");
+        });
+      });
+    </script>
+  </body>
+</html>
